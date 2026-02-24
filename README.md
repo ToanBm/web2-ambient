@@ -1,4 +1,5 @@
-# web2-dev — Web2 #6: Detect and Handle Refusal Programmatically
+# Web2 Developer Loop — Micro-Challenge #6
+## "Detect and handle refusal programmatically."
 
 Calls Ambient via the streaming API, detects whether the model refused to answer,
 and routes refused responses to a human review queue.
