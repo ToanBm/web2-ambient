@@ -127,7 +127,12 @@ def _build_payload(
     max_tokens: Optional[int],
     top_p: Optional[float],
 ) -> dict:
-    payload: dict = {"model": model, "messages": messages, "stream": True}
+    payload: dict = {
+        "model": model,
+        "messages": messages,
+        "stream": True,
+        "stream_options": {"include_usage": True},
+    }
     if temperature is not None:
         payload["temperature"] = temperature
     if max_tokens is not None:
